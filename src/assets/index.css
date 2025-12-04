@@ -1,0 +1,33 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: "Rubik", sans-serif;
+	font-size: 1rem;
+	line-height: 2;
+	color: #ffffff;
+	background-image: var(--bg);
+}
+
+.main {
+	width: fit-content;
+	padding: 1rem;
+	margin: auto;
+	margin-top: 1rem;
+	background-color: #000000f0;
+	border-radius: 1rem;
+}
+
+.link {
+}
+
+.link-github\.com {
+}

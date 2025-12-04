@@ -1,0 +1,13 @@
+{
+	"scripts": {
+		"fmt": "bun format",
+		"check": "bunx @biomejs/biome check",
+		"format": "bunx @biomejs/biome format",
+		"lint": "bunx @biomejs/biome lint",
+		"build": "bunx bluejay build src/main.tsx",
+		"serve": "bunx bluejay serve src/main.tsx"
+	},
+	"dependencies": {
+		"bluejay": "https://github.com/apacheli/bluejay"
+	}
+}

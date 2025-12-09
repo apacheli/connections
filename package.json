@@ -9,5 +9,8 @@
 	},
 	"dependencies": {
 		"bluejay": "https://github.com/apacheli/bluejay"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.8"
 	}
 }

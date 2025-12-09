@@ -8,26 +8,99 @@ html {
 	box-sizing: inherit;
 }
 
+::selection {
+	color: #ffffff;
+	background-color: var(--t);
+}
+
 body {
 	margin: 0;
 	font-family: "Rubik", sans-serif;
 	font-size: 1rem;
 	line-height: 2;
-	color: #ffffff;
-	background-image: var(--bg);
+	color: #000000;
+	background: var(--b) no-repeat fixed center / cover;
+}
+
+svg {
+	width: 2rem;
+	height: 2rem;
+	margin: 1rem 0;
+}
+
+h1,
+h2 {
+	margin: 1rem 0;
 }
 
 .main {
-	width: fit-content;
+	width: min(24% + 24rem, 100%);
 	padding: 1rem;
-	margin: auto;
-	margin-top: 1rem;
-	background-color: #000000f0;
-	border-radius: 1rem;
+	margin: 1rem auto;
+	background-color: #ffffff;
+	border: 0.125rem #000000 solid;
+	box-shadow: 0.5rem 0.5rem 0 #00000080;
+}
+
+.header {
+	text-align: center;
+	border-bottom: 0.125rem #000000 solid;
+}
+
+.portrait {
+	width: 8rem;
+	height: 8rem;
+	border: 0.125rem #000000 solid;
+	border-radius: 50%;
 }
 
 .link {
+	position: relative;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0;
+	color: #000000;
+	text-decoration: none;
+	background-color: #ffffff;
+	border: 0.125rem #000000 solid;
+	transform: translate(0, 0);
+	transition: all 0.25s;
 }
 
-.link-github\.com {
+.link:hover {
+	color: var(--c);
+	border-color: var(--c);
+	box-shadow: 0.5rem 0.5rem 0 #00000080;
+	fill: var(--c);
+	transform: translate(-0.5rem, -0.5rem);
+}
+
+.note {
+}
+
+.image {
+	width: fit-content;
+	max-width: 100%;
+	margin: auto;
+	overflow: auto;
+	text-align: center;
+}
+
+.image-container {
+	max-width: 100%;
+	overflow: auto;
+}
+
+img {
+	display: block;
+	margin: auto;
+	border: 0.125rem #000000 solid;
+}
+
+@media (max-width: 24rem) {
+	.link p {
+		display: none;
+	}
 }
